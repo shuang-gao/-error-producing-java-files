@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MyController">
+   <center>
+      <Label fx:id="myLabel" prefHeight="59.0" prefWidth="77.0" text="Hello" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <Button fx:id="myButton" mnemonicParsing="false" onAction="#reactToButtonClick" text="Click me" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <ChoiceBox fx:id="myChoiceBox" prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </top>
+   <right>
+      <TextField fx:id="myTextField" onKeyTyped="#keyTyped" text="Default Text" BorderPane.alignment="CENTER" />
+   </right>
+   <left>
+      <PieChart fx:id="myPieChart" prefHeight="108.0" prefWidth="200.0" title="My pie chart" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>
